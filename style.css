@@ -1,0 +1,215 @@
+/* General styles */
+body {
+    background-image: url(Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Icon styling */
+.icon {
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    background-image: url('ICON.jpg');
+    background-size: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Navigation styling */
+nav {
+    background-color: rgba(26, 0, 122, 0.637);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* Main content styling */
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px; /* Adding margin to account for fixed nav */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+/*............................................................*/
+.descriptions {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: rgba(235, 209, 209, 0.986);
+    line-height: 1.5;
+    word-spacing: 0.1em;
+    letter-spacing: 0.05em;
+}
+p a{
+    color: #fff;
+}
+
+/* About section styling */
+#about-section {
+    padding: 20px;
+    background-color: #005b8f70;
+    border-radius: 8px;
+    margin-top: 20px; /* Keeps some space between the navigation bar and the about section */
+    margin-bottom: 40px; /* Adjusted margin to increase space between about section and footer */
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #fff2f2;
+    line-height: 1.5;
+}
+
+/* Footer styling */
+.footerContainer {
+    background-color: rgba(27, 0, 122, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    padding-top: 20px; /* Adds padding at the top of the footer */
+}
+
+.footerContainer .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footerContainer p {
+    margin: 0;
+}
+
+.socialIcons a {
+    color: white;
+    margin: 0 5px;
+    font-size: 24px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+
+    .image-container, .descriptions {
+        max-width: 100%;
+    }
+}
+
+
+/*....................MGA COL........................*/
+
+.row{
+    background-color: #01073b4d;
+    display: inline-block;
+    border: 5px solid;
+    margin: 1cm;
+    padding: 20pxcm;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.img-container-fluid img {
+    max-width: 100%; 
+    height: auto;
+
+}
+.text{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+     color: #fff;
+   
+        
+}
+
+
+/* Commission section styles */
+#commission-section {
+    padding: 20px; /* Add padding around the section */
+}
+
+/* Container for commission items */
+.commission-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr)); /* Adjust column size */
+    gap: 20px; /* Add spacing between items */
+    justify-content: center; /* Center items within the container */
+}
+
+/* Styles for commission items */
+.commission-item {
+    text-align: center; /* Center-align text */
+}
+
+/* Styles for images in commission items */
+.commission-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Styles for descriptions */
+.description {
+    margin-top: 10px; /* Add spacing between image and description */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 576px) {
+    /* Adjust grid columns for smaller screens */
+    .commission-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
